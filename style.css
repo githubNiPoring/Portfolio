@@ -342,6 +342,130 @@ footer .container img:hover {
 
 /* FOOTER================================================= */
 
+@media (max-width: 500px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: aliceblue;
+    overflow-x: hidden;
+  }
+  .color {
+    z-index: -2;
+    height: 700px;
+    width: 700px;
+    background-image: radial-gradient(closest-side, #4f4b4b5d, #262626);
+    position: absolute;
+    top: -440px;
+    left: 50px;
+  }
+
+  nav h3 {
+    font-size: 1.5rem;
+  }
+  nav ul li {
+    display: none;
+  }
+  .teamDesc {
+    width: 100vw;
+    padding: 0 20px;
+    /* background-color: #40c9ff; */
+  }
+  .teamDesc h1 {
+    color: rgb(244, 201, 7);
+    font-size: 1.3rem;
+    transition: all 0.5s ease-in;
+  }
+  .teamDesc h1:hover {
+    font-size: 1.3rem;
+  }
+  .teamDesc p {
+    margin-top: -25px;
+    font-size: 0.5rem;
+    font-style: italic;
+    text-align: center;
+  }
+
+  /* ourteam */
+  .ourTeam {
+    height: 100vh;
+    padding-top: 80px;
+    padding: 80px 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: #40c9ff; */
+  }
+  .ourTeam img {
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: solid 3.5px rgb(244, 201, 7);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .ourTeam .container {
+    padding: 0 10px;
+    width: 100vw;
+    height: 50vh;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ourTeam .container h3 {
+    font-size: 1.3rem;
+  }
+  .ourTeam .container .role {
+    font-size: 1rem;
+  }
+  .ourTeam .container .description {
+    font-size: 0.7rem;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* contact */
+  .contact {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .contact .container {
+    width: 100vw;
+    padding: 0 20px;
+  }
+  .contact .container h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .contact .container .desc {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+  }
+  .contact .container h4 {
+    font-size: 0.8rem;
+  }
+  .contact .container .deets {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+  }
+  .form-container {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  /* footer */
+  footer p {
+    text-align: center;
+    font-size: 0.5rem;
+  }
+}
+
 /* animation */
 @keyframes showRight {
   100% {
@@ -388,11 +512,11 @@ footer .container img:hover {
 .landing {
   animation: land linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 20%;
 }
 
 .landing-left {
   animation: land-left linear;
   animation-timeline: view();
-  animation-range: entry 0% cover 50%;
+  animation-range: entry 0% cover 20%;
 }
