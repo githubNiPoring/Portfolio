@@ -342,7 +342,7 @@ footer .container img:hover {
 
 /* FOOTER================================================= */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   * {
     padding: 0;
     margin: 0;
